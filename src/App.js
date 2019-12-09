@@ -4,6 +4,7 @@ import Container from './components/Container';
 import Footer from './components/Footer';
 import Banner from './components/Banner';
 import images from './images';
+// import images1 from '/images1';
 
 class App extends Component {
   state = {
@@ -34,6 +35,7 @@ class App extends Component {
   shuffleArray() {
     // creates a copy of the current characters array to modify it by value, and not by reference
     const newArr = images.slice();
+    // const newArr = images1.slice();
 
     // will store the shuffled array
     const shuffleArr = [];
