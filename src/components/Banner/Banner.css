@@ -1,6 +1,7 @@
 .banner {
-  background-image: url('../../images/bg.png') !important;
-  height: 370px;
+  /* background-image: url('../../images/bg.png') !important; */
+  background-image: url('../../imagesw/bg.png') !important;
+  height: 300px;
   margin: 0 !important;
   padding: 0 !important;
   color: white;

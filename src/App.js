@@ -3,8 +3,8 @@ import Navbar from './components/Navbar';
 import Container from './components/Container';
 import Footer from './components/Footer';
 import Banner from './components/Banner';
-import images from './images';
-// import images1 from '/images1';
+// import images from './images';
+import imagesw from './imagesw';
 
 class App extends Component {
   state = {
@@ -34,8 +34,9 @@ class App extends Component {
   // used to shuffle the array of images when the DOM loads, and when an image is clicked
   shuffleArray() {
     // creates a copy of the current characters array to modify it by value, and not by reference
-    const newArr = images.slice();
-    // const newArr = images1.slice();
+    // IMAGES SWITCH
+    // const newArr = images.slice();
+    const newArr = imagesw.slice();
 
     // will store the shuffled array
     const shuffleArr = [];
