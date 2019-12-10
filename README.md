@@ -1,5 +1,7 @@
 # Clicky-App
 
+![Clicky-App](https://github.com/AlanLeverenz/Clicky-App/blob/master/docs/clicky-app-page.png)
+
 __Clicky-App__ is a game that tests a player's memory. Twelve cards appear in a container. Each card contains a different image the user must remember whether they have clicked on it. The score increments with each successful choice. If a user clicks on a card that has already been clicked, the score resets to zero. The highest game score is also displayed.
 
 Click-App uses React as its view engine. React can be setup to pass 'props' to child components. It re-renders components and their child components when 'state' changes occur.
