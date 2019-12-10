@@ -64,31 +64,57 @@ The following child folders are stored in the src/components/ folder which are d
 
 There are five components that compose the Clicky-App's single webpage. Each component has its own folder with JS and CSS files, exported by an index.js file.
 
-* __Navbar.__ Displays messages, the game score, and the highest score. 
+* __Navbar.__ Displays messages, the game score, and the highest score.
 * __Banner.__ A static const that displays messages to the user against a background image.
-* __Container.__ The parent component for character cards. Passes props for 'shake' css effect, maps an image name to each Character card, and the clickEvent. Container.js passes a prop to the Character file, which it imports.
-* __Character.__ A card that the user clicks on. The onClick function has a callback so the props.clickEvent can check if the image has been clicked or not.
+* __Container.__ The parent component for character cards. Passes props for 'shake' css effect, maps an image name to each Character card, and the clickEvent. Container.js passes a prop to the Character file, which it imports. Here is the code snippet:
+```` const Container = props => (
+  <div
+    className={
+      props.shake
+        ? 'container d-flex flex-wrap justify-content-center shake'
+        : 'container d-flex flex-wrap justify-content-center'
+    }
+  >
+    {props.characters.map((a, i) => <Character name={a} key={i} clickEvent={props.clickEvent} />)}
+  </div>
+);
+````
+* __Character.__ A card that the user clicks on. The *onClick* function includes a callback so the props.clickEvent can check if the image has been clicked or not.
 * __Footer.__ Static const that displays the name of the author.
 
 ### Images
 
-There are twelve local images that are assigned to Character cards. The image names are stored in a const array along with their imported file paths. 
+There are twelve local images that are assigned to Character cards. The image names are stored in a const array along with their imported file paths.
 
-There are actually two sets of image collections:
+There are actually two sets of image collections.  Each set is imported into a javascript file with their name and filepath. An array of image names is exported and imported by App.js for inclusion in its functions.
 * __imagesw.__ A collection of .jpeg images of characters from StarWars movies.
-* __image.__ A collection of .png images of characters from animated cartoons.
+* __image.__ A collection of .png images of characters from animated cartoons, i.e., Rick and Morty, etc.
   
-An updated version of this app will enable the user to select which image collection they prefer.
+*Note:* An updated version of this app will enable the user to select which image collection they prefer.
 
 ### CSS effects
 
-Each component has styles defined in indvidual CSS files.
+Each component has styles defined in indvidual CSS files, with comments on special effects applied.
 
-* __banner.css.__ 
-* __footer.css.__  
-* __character.css.__
-* 
-
+* __banner.css.__ The original background image (ala Trevor Johnson's Github repo) was converted from an Indexed color to RGB and then colorized by adjusting its channels. The font-size is re-calculated according to its @media width to avoid wrapping the text.
+````
+  @media (min-width: 576px) {
+  .banner {
+    font-size: calc(10px + 14 * (100vw - 320px) / 800);
+  }
+}
+````
+* __footer.css.__
+* __character.css.__ Cards have a shadow. Hovering applies a transform slightly enlarging the image and shadow size. Here is the .card:hover css code snippet that creates the shadow effect:
+````
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transform: scale(1.05);
+  transition: 0.1s;
+}
+````
+* __container.css__ Defines the 'shaker' animation effect applied for an incorrect click event. Here is a link illustrating a shaker css snippet: (https://css-tricks.com/snippets/css/shake-css-keyframe-animation/)
+* __navbar.css__ 
 
 ### Dependencies
 
