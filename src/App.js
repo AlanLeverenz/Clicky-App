@@ -27,13 +27,14 @@ class App extends Component {
     shake: false
   };
 
-  // binds the current this context to checkClicked to have access to the current state
+  // binds the current 'this.checkClicked' to have access to the current state
   // when passed down to the Character component
   clickEvent = this.checkClicked.bind(this);
 
   // used to shuffle the array of images when the DOM loads, and when an image is clicked
   shuffleArray() {
     // creates a copy of the current characters array to modify it by value, and not by reference
+
     // IMAGES SWITCH
     // const newArr = images.slice();
     const newArr = imagesw.slice();

@@ -7,7 +7,7 @@ import Character from '../Character';
 // to create a new Character component for each image
 // attaches the passed down clickEvent function to each Character component
 const Container = props => (
-  // loops through
+  // loops through characters to set name and key id.
   <div
     className={
       props.shake
