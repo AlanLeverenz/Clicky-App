@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/Clicky-App/static/css/main.d2473386.chunk.css",
+    "main.js": "/Clicky-App/static/js/main.6c3599dd.chunk.js",
+    "main.js.map": "/Clicky-App/static/js/main.6c3599dd.chunk.js.map",
+    "runtime-main.js": "/Clicky-App/static/js/runtime-main.f09b89e7.js",
+    "runtime-main.js.map": "/Clicky-App/static/js/runtime-main.f09b89e7.js.map",
+    "static/js/2.57939245.chunk.js": "/Clicky-App/static/js/2.57939245.chunk.js",
+    "static/js/2.57939245.chunk.js.map": "/Clicky-App/static/js/2.57939245.chunk.js.map",
+    "index.html": "/Clicky-App/index.html",
+    "precache-manifest.bce9ee28f0542a0a74eae4de088ecca7.js": "/Clicky-App/precache-manifest.bce9ee28f0542a0a74eae4de088ecca7.js",
+    "service-worker.js": "/Clicky-App/service-worker.js",
+    "static/css/main.d2473386.chunk.css.map": "/Clicky-App/static/css/main.d2473386.chunk.css.map",
+    "static/media/Banner.css": "/Clicky-App/static/media/bg.86c82c7a.png",
+    "static/media/c-3po.jpg": "/Clicky-App/static/media/c-3po.2b84948f.jpg",
+    "static/media/count-dooku.jpg": "/Clicky-App/static/media/count-dooku.15541105.jpg",
+    "static/media/darth-maul.jpg": "/Clicky-App/static/media/darth-maul.a7fd83e7.jpg",
+    "static/media/general-grevious.jpg": "/Clicky-App/static/media/general-grevious.08f91023.jpg",
+    "static/media/greedo.jpg": "/Clicky-App/static/media/greedo.2ffde15a.jpg",
+    "static/media/maz_kanata.jpg": "/Clicky-App/static/media/maz_kanata.af970340.jpg",
+    "static/media/padme-amidala.jpg": "/Clicky-App/static/media/padme-amidala.4e25b585.jpg",
+    "static/media/poe-dameron.jpg": "/Clicky-App/static/media/poe-dameron.dda55816.jpg",
+    "static/media/rey.jpg": "/Clicky-App/static/media/rey.9376200d.jpg",
+    "static/media/salacious-b-crumb.jpg": "/Clicky-App/static/media/salacious-b-crumb.f9745aff.jpg",
+    "static/media/sebulba.jpg": "/Clicky-App/static/media/sebulba.cc184394.jpg",
+    "static/media/tusken-raider.jpg": "/Clicky-App/static/media/tusken-raider.d863c815.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f09b89e7.js",
+    "static/js/2.57939245.chunk.js",
+    "static/css/main.d2473386.chunk.css",
+    "static/js/main.6c3599dd.chunk.js"
+  ]
+}
