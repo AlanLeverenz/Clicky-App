@@ -12,39 +12,43 @@ Click-App uses React as its view engine. React can be setup to pass 'props' to c
 
 The App.js file is the 'parent brain' of the app and does the following:
 
-* __Imports__ four component folders:
-* * Banner
-* * Container
-* * Footer
-* * Navbar 
-* * and the *image* folder.
-* Sets the __state__, consisting of:
-* * score, highScore
-* * assigns value to navMessage based on a good or bad click
-* * contains intro, success, and failure messages
-* * contains an array of image urls
-* * tracks each clicked element
-* * shakes the container on an incorrect guess
+__Imports__ four component folders:
+* Banner
+* Container
+* Footer
+* Navbar 
+* and the *image* folder.
+Sets the __state__, consisting of:
+* score, highScore
+* assigns value to navMessage based on a good or bad click
+* contains intro, success, and failure messages
+* contains an array of image urls
+* tracks each clicked element
+* shakes the container on an incorrect guess
 
-* __binds__ the *this.checkClicked* event for access to the current state when passed to the Character component.
-* creates a *shuffleArray* by randomly modifying index values.
-* runs the __checkClicked__ function that:
-* * creates *prevState* array with all previously clicked images
-* * applies the *shuffleArray* index values to images (cards) and assigns it to *shuffled* array.
-* * tracks the current and highest scores by first testing if the image has been clicked or not
-* * * if not already clicked, adds the image item to the prevState array, increments the current score (and highest score was equal to), and reshuffles the images
-* * * if already clicked, resets the current score to zero, and reshuffles the images
-* * returns a new setState with values dependent on whether the image was clicked *(this.state.wasClicked)* or not. State values returned are:
-* * * (current) score and highScore
-* * * navMsgColor and navMessage
-* * * allCharacters (shuffled)
-* * * wasClicked ([] or prevState)
-* * * shake (true or false)
-* renders the score and appropriate message to the Navbar
-* passes the *allCharacters* array to the Container to create a Character component for each image, with following props items:
-* * shake
-* * characters
-* * clickEvent
+__binds__ the *this.checkClicked* event for access to the current state when passed to the Character component.
+
+Creates a *shuffleArray* by randomly modifying index values.
+
+Runs the __checkClicked__ function that:
+* creates *prevState* array with all previously clicked images
+* applies the *shuffleArray* index values to images (cards) and assigns it to *shuffled* array.
+* tracks the current and highest scores by first testing if the image has been clicked or not:
+* * if not already clicked, adds the image item to the prevState array, increments the current score (and highest score was equal to), and reshuffles the images
+* * if already clicked, resets the current score to zero, and reshuffles the images
+* returns a new setState with values dependent on whether the image was clicked *(this.state.wasClicked)* or not. State values returned are:
+* * (current) score and highScore
+* * navMsgColor and navMessage
+* * allCharacters (shuffled)
+* * wasClicked ([] or prevState)
+* * shake (true or false)
+
+Renders the score and appropriate message to the Navbar
+
+Passes the *allCharacters* array to the Container to create a Character component for each image, with following props items:
+* shake
+* characters
+* clickEvent
 
 The __src__ folder includes the following files:
 
