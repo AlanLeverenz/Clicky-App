@@ -4,6 +4,8 @@ __Clicky-App__ is a game that tests a player's memory. Twelve cards appear in a 
 
 Click-App uses React as its view engine. React can be setup to pass 'props' to child components. It re-renders components and their child components when 'state' changes occur.
 
+![](static/media/app_screenshot.png)
+
 ## SRC folder structure
 
 ### App.js
